@@ -1,0 +1,145 @@
+:root {
+  --WEB_TOP_SIZE: 80px;
+}
+
+*{
+  user-select: none;
+  -webkit-user-drag:none;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  min-width: 800px;
+  min-height: 600px;
+  background-color: #e5ecef;
+}
+
+.can_click{
+  cursor: pointer;
+}
+
+.Web_top {
+  width: 100%;
+  height: var(--WEB_TOP_SIZE);
+  display: inline-flex;
+  
+  align-content: center;
+  align-items: center;
+}
+.top_mod{
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+  white-space: nowrap;
+  font-family: sans-serif;
+}
+
+.title{
+  --margin_set : 20px;
+  margin: 0px;
+  margin-left: var(--margin_set);
+  /*margin-right: calc(0px - var(--margin_set));*/
+  text-align: left;
+  flex: 2;
+  max-width: 300px;
+  font-size: 35px;
+  font-weight: 600;
+}
+.title_img{
+  position: relative;
+  top:5px;
+  width: 100%;
+}
+.menu_button{
+  width: 100%;
+  text-align: center;
+  flex: 1;
+  max-width:400px;
+  font-size: 20px;
+  font-weight: 50;
+  transition: .2s;
+}
+.menu_button:hover{
+  transition: .2s;
+  color: rgb(255, 88, 88);
+  text-shadow: 0px 0px 5px rgb(255, 88, 88);
+}
+.menu_button:active {
+  transition: .2s;
+  transform: scale(1.2);
+}
+.menu_last{
+  flex: 1;
+}
+
+
+
+.Web_center {
+  width: 100%;
+  height: calc(100% - var(--WEB_TOP_SIZE));
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.Web_left {
+  height: 100%;
+  width: var(--WEB_TOP_SIZE);
+  display: flex;
+  flex-direction: column;
+  
+  /*justify-content: center;*/
+  align-content: center;
+  align-items: center;
+}
+.left_menu_button{
+  font-size: 30px;
+  width: calc(var(--WEB_TOP_SIZE) - 10px);
+  height: calc(var(--WEB_TOP_SIZE) - 10px);
+  margin: 0px 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  background-color: rgba(0,0,0,0);
+  border-radius: 20px;
+  transition: .1s;
+}
+.left_menu_button:hover{
+  background: #cccccc;
+  transition: .1s;
+}
+.Bubble_tip{
+  font-size: 20px;
+  padding: 5px;
+  opacity: 0;
+  max-width: 250px;
+  width: 10vh;
+  min-width: 180px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  left: calc(var(--WEB_TOP_SIZE));
+  border-radius: 8px;
+  position: absolute;
+  z-index: -1;
+  transition: .1s;
+}
+.left_menu_button:hover .Bubble_tip{
+  opacity: 1;
+  background-color: rgba(0,0,0,.5);
+  z-index: 1;
+  transition: .1s;
+}
+.left_menu_button:active{
+  background-color: gray;
+  transition: .1s;
+}
+
+.Web_Browser{
+  flex: 1;
+  height: 100%;
+  border: 0px;
+  border-radius: 30px 0px 0px 0px;
+}

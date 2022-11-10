@@ -1,0 +1,195 @@
+*{
+  -webkit-user-drag:none;
+}
+
+:root{
+  --padding_Set :10px;
+}
+
+html, body {
+  margin: 0;
+  padding-left: var(--padding_Set);
+  padding-top: var(--padding_Set);
+  background-color: white;
+  height: calc(100% - var(--padding_Set));
+  width: calc(100% - var(--padding_Set));
+}
+
+.Answer_Page{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  opacity: 1;
+  transition: .1s;
+}
+
+.CloseBox{
+  position: absolute;
+  top:calc(0px - var(--padding_Set) - 15px - 10px - 5px);
+  right: 0px;
+  margin: 0px;
+  color: red;
+  font-size: 25px;
+  font-family: system-ui;
+  font-weight: 900;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CloseBox:hover{
+  color: rgb(180, 0, 0);
+}
+
+.Answer_Box{
+  position: relative;
+  background-color: white;
+  min-width: 300px;
+  min-height: 350px;
+  width: 80%;
+  height: 70%;
+  max-width: 550px;
+  max-height: 600px;
+  padding: 20px;
+  border-radius: 15px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: system-ui;
+}
+
+.Answer_Box_Top{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.Answer_RowFlex{
+  display: flex;
+}
+
+.Answer_Topic_Part{
+  flex: 1;
+}
+
+.StartRun_Button{
+  flex: 1;
+  --font_size:15px;
+  height: calc(var(--font_size) + 10px);
+  max-width: calc(var(--font_size) * 7);
+  font-size: var(--font_size);
+  border: 1px solid #7bb7ff;
+  background-color: #5ba5ff;
+  border-radius: calc(var(--font_size) / 5);
+  color: black;
+  font-family: monospace;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.StartRun_Button:hover{
+  background-color: #0073ff;
+  color: white;
+}
+
+.StartRun_Button:active{
+  transform: scale(.8);
+  transition: .05s;
+}
+
+.result_Box{
+  height: calc(100% - 70px - var(--padding_Set));
+  overflow:auto;
+}
+
+.Basic_Page{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.dir_div{
+  flex: 2;
+  margin-bottom: calc(var(--padding_Set) * 2);
+  margin-left: calc((var(--padding_Set) * 2) - 10px);
+  margin-right: calc((var(--padding_Set) * 2) - 10px);
+}
+
+.title_Setting{
+  margin: 0px;
+  padding: 0px;
+  font-weight: 100;
+  font-family: system-ui;
+}
+
+.Class_title{
+  font-size: 40px;
+}
+.Part_title{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.Topic_Box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Topic_Buttom{
+  background-color: #e8f2ff;
+  border-radius: 10px;
+  font-family: sans-serif;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.Topic_Buttom:hover{
+  background-color: #d0e4fd;
+  transition: .1s;
+}
+
+.Topic_Buttom:active{
+  background-color: #99c7ff;
+  transition: .1s;
+}
+
+.List_Mode{
+  --padding: 10px;
+  padding: var(--padding);
+  margin: 15px 0px 0px 0px;
+  width: calc(100% - ((var(--padding_Set) * 2) + (var(--padding) * 2)));
+  height: calc(85px - var(--padding) * 2);
+}
+
+.Topic_text_setting {
+  padding: 0px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+.Topic_title{
+  font-size: 35px;
+}
+
+.Topic_Part{
+  font-size: 20px;
+  color: gray;
+}
+
+
+.detailed_div{
+  flex: 1;
+  margin-bottom: calc(var(--padding_Set) * 2);
+  margin-right: calc((var(--padding_Set) * 2) - 20px);
+  border-left: 1px solid #eee;
+  padding-left: 20px;
+}
