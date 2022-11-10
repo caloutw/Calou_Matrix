@@ -49,6 +49,6 @@ I need go to sleep, i wanna get more bitcoin, i tired like a dog.
 
 Oh...i really need go to bed, time not to late, Bye.
 
-shh....if you can, give me some buy coffe money
+shh....if you can, give me some buy coffee money
 
 this is my bitcoin address : 1AyoNXccpMWKFkcun8ye1idUb8FKVbprda
